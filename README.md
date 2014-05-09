@@ -1,0 +1,4 @@
+gen
+===
+
+Aplicación genérica
