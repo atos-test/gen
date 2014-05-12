@@ -49,6 +49,9 @@ var lista = {
         var anchoImg = anchoLista*0.25;
         self.setHeightImg(anchoImg);
 
+        /*El alto de cada elemento de la lista es el alto de la imagen*/
+        $(".elementoLista").height(anchoImg);
+
         console.log("anchoDocument: ", self.anchoDocument);
         console.log("anchoLista: ", anchoLista);
         console.log("anchoImg: ", anchoImg);
