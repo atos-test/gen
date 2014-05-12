@@ -1,4 +1,9 @@
 /*INICIO PARTE ALBERTO*/
+.contentLista{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .headerLista{
     min-height: 3.2em;
 }
