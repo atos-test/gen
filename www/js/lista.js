@@ -2,6 +2,7 @@ var lista = {
     fichero : "data/hojaContactos.xml",
     hojaContactos: null,
     contactos: null,
+    anchoDocument: 0,
 
     initialize: function() {
         var self = lista;
@@ -34,9 +35,32 @@ var lista = {
 
         $("#listaContactos").listview().listview('refresh');
 
-        var heightImg = $("#imgcon0Id").height();
+        /*El ancho de la lista es el 95% del ancho de la pantalla*/
+        self.anchoDocument = $(document).width();
+        var anchoLista = self.anchoDocument * 0.95;
 
-        console.log("Altura img-->", heightImg);
+        /*El 5% restante se reparte entre padding-left y padding-right*/
+        var anchoRestanteLista = self.anchoDocument - anchoLista;
+        $("#listaContactos").css({ 'padding-left': anchoRestanteLista/2});
+        $("#listaContactos").css({ 'padding-right': anchoRestanteLista/2});
+        $("#listaContactos").width(anchoLista);
+
+        /*El ancho de la imagen es el 25% de cada elemento*/
+        var anchoImg = anchoLista*0.25;
+        self.setHeightImg(anchoImg);
+
+        /*El alto de cada elemento de la lista es el alto de la imagen*/
+        $(".elementoLista").height(anchoImg);
+
+        console.log("anchoDocument: ", self.anchoDocument);
+        console.log("anchoLista: ", anchoLista);
+        console.log("anchoImg: ", anchoImg);
+    },
+
+    setHeightImg: function(ancho){
+        var self = lista;
+        var img = document.getElementsByName("imgName");
+        $(img).height(ancho);
     },
 
     cargaTemplateLista: function(){
@@ -53,6 +77,15 @@ var lista = {
     bindEvents: function() {
         $("#btnPanel").on("vclick", function(){
             $("#mypanel").panel( "open");
+        });
+
+        /*Capturamos el evento de click de cada imagen*/
+        var img = document.getElementsByName("imgName");
+
+        $(img).each(function(index){
+            $(this).on("vclick",function(){
+                console.log("Click: ", this.id);
+            });
         });
     },
 };
