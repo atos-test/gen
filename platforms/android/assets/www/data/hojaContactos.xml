@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<chojaContactos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+	<Contactos>
+		<cContacto>
+			<id>con0</id>
+			<Nombre>Perico</Nombre>
+			<Apellidos>Palotes</Apellidos>
+			<TelefonoMovil>666555444</TelefonoMovil>
+			<TelefonoFijo>916006060</TelefonoFijo>
+			<Imagen>img/96x96icon.png</Imagen>
+			<Favorito>false</Favorito>
+		</cContacto>
+		<cContacto>
+			<id>con1</id>
+			<Nombre>Jose</Nombre>
+			<Apellidos>Shakespeare</Apellidos>
+			<TelefonoMovil>632987654</TelefonoMovil>
+			<TelefonoFijo>916115478</TelefonoFijo>
+			<Imagen>img/96x96icon.png</Imagen>
+			<Favorito>false</Favorito>
+		</cContacto>
+	</Contactos>
+</chojaContactos>
