@@ -1,26 +1,58 @@
 var lista = {
-    fichero : "data/hojaProductos.xml",
-    hojaProductos: null,
+    fichero : "data/hojaContactos.xml",
+    hojaContactos: null,
+    contactos: null,
 
     initialize: function() {
         var self = lista;
         self.loadXML();
+        self.refreshView();
         self.bindEvents();
     },
 
     loadXML: function(){
         var self = lista;
-        console.log("loadXML");
 
         cargaXML.loadXML(self.fichero,function(dataJSON){
-            self.hojaProductos = dataJSON;
-            console.log("Cargados datos de hojaProductos");
+            self.hojaContactos = dataJSON;
+            self.contactos = self.hojaContactos.chojaContactos.Contactos.cContacto;
         });
 
-        console.log("Lista: ", self.hojaProductos.chojaProductos.Productos);
+        console.log("Lista: ", self.contactos);
+    },
+
+    refreshView: function(){
+        var self = lista;
+
+        self.cargaTemplateLista();
+
+        self.resizeImg();
+    },
+
+    resizeImg: function(){
+        var self = lista;
+
+        $("#listaContactos").listview().listview('refresh');
+
+        var heightImg = $("#imgcon0Id").height();
+
+        console.log("Altura img-->", heightImg);
+    },
+
+    cargaTemplateLista: function(){
+        var self = lista;
+
+        //Template de lista
+        var template = _.template($('#contactos-template').html(), {contactos : self.contactos});
+        $('#listaContactos').html(template);
+        $("#listaContactos").listview().listview('refresh');
+        console.log("Pintado");
+
     },
 
     bindEvents: function() {
-        console.log("Estoy en lista");
+        $("#btnPanel").on("vclick", function(){
+            $("#mypanel").panel( "open");
+        });
     },
 };

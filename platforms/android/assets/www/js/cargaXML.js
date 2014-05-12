@@ -2,7 +2,7 @@ var cargaXML={
     cacheXML: {},
     loadXML: function (urlXMLFile,callbackOK, callbackError,customPrefix) {
         var self=cargaXML;
-        console.log("Trato de cargar ",urlXMLFile);
+
         //Prefijo por defecto para casi todos los XMLs
         var prefix="c";
         if (customPrefix){
@@ -30,7 +30,6 @@ var cargaXML={
                         arrayPrefix : prefix
                     });
                     var xmlFile = request.responseXML;
-                    console.log("xmlFile ==>", xmlFile);
 
                     var dataJSON=x2js.xml2json(xmlFile);
                 

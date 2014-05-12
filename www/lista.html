@@ -11,6 +11,7 @@
         
         <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js"></script>
         <script type="text/javascript" src="js/lista.js"></script>
         <script type="text/javascript" src="js/cargaXML.js"></script>
         <script type="text/javascript" src="js/xml2json.js"></script>
@@ -24,16 +25,57 @@
     <body>
         <script type="text/javascript">
             $(window).load(lista.initialize);
-            //$(document).on('pageinit',"#firmaPage", lista.initialize );
+            //$(document).on('pageinit',"#listaPage", lista.initialize );
         </script>
-        <div id="firmaPage" data-role="page" data-theme="e" >
+
+        <div id="listaPage" data-role="page" data-theme="a" >
+
+            <div data-role="panel" id="mypanel" data-position="right" data-display="overlay">
+                PANEL
+            </div>
             
-            <div id="header" data-theme="a" data-role="header" class="headerIndex">
-                <label>Lista</label>
+            <div id="header" data-theme="a" data-role="header" class="headerLista">
+                
+                
+                    <a data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+                    <label class="lblHeader">Lista</label>
+                    <a data-role="button" data-icon="gear" data-iconpos="notext" id="btnPanel"></a>
+                
             </div>
-            <div data-role="content" data-theme="e" class="contentIndex">
-                <label>Lista</label>
+            <div data-role="content" data-theme="a" class="contentIndex">
+                <div id="contenedorLista">
+                    <ul id="listaContactos" data-role="listview" data-inset="true">
+
+                    </ul>
+                </div>
             </div>
+
+<!--Template lista-->
+
+            <script type="text/template" id="contactos-template" >
+                <% _.each(contactos, function(contacto) {%>
+                    <%
+                        var idImg = "img"+contacto.id+"Id";
+                    %>
+
+                    <li data-icon="false" class="elementoLista">
+                        <div>
+                            <div id="imagen" style="float:left;">
+                                <a class="aImgClass"><img id="<%= idImg %>" src=" <%= contacto.Imagen %>" class="imgClass"></a>
+                            </div>
+                             
+                            <div id="contactoInfo" style="float:left;">
+                                <label><%= contacto.Nombre + " " + contacto.Apellidos %></label>
+                                <label>M&oacute;vil: <%= contacto.TelefonoMovil %></label>
+                                <label>Fijo: <%= contacto.TelefonoFijo %></label>
+                            </div>
+                            
+                        </div>
+                                
+                            
+                    </li>
+                <% }); %>
+            </script>          
         </div>
         
     </body>
