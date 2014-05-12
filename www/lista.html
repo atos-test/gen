@@ -12,6 +12,8 @@
         <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
         <script type="text/javascript" src="js/lista.js"></script>
+        <script type="text/javascript" src="js/cargaXML.js"></script>
+        <script type="text/javascript" src="js/xml2json.js"></script>
 
         <!--Style-->
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css"/>
@@ -21,11 +23,12 @@
     </head>
     <body>
         <script type="text/javascript">
-            app.initialize();
+            $(window).load(lista.initialize);
+            //$(document).on('pageinit',"#firmaPage", lista.initialize );
         </script>
         <div id="firmaPage" data-role="page" data-theme="e" >
             
-            <div id="header" data-theme="a" data-role="header"  class="headerIndex">
+            <div id="header" data-theme="a" data-role="header" class="headerIndex">
                 <label>Lista</label>
             </div>
             <div data-role="content" data-theme="e" class="contentIndex">

@@ -21,16 +21,18 @@
     </head>
     <body>
         <script type="text/javascript">
-            app.initialize();
+            //app.initialize();
+            //$(window).load(app.initialize);
+            $(document).on('pageinit',"#loginPage", app.initialize );
         </script>
-        <div id="firmaPage" data-role="page" data-theme="e" >
+        <div id="loginPage" data-role="page" data-theme="e" >
             
             <div id="header" data-theme="a" data-role="header"  class="headerIndex">
                 <label>Header</label>
             </div>
             <div data-role="content" data-theme="e" class="contentIndex">
                 <label>Contenido</label>
-                <a data-role="button" data-icon="arrow-r" data-inline="true" href="lista.html">Ir a lista</a>
+                <a data-role="button" data-icon="arrow-r" data-inline="true" id="btnIr">Ir a lista</a>
             </div>
         </div>
         
