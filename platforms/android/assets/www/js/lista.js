@@ -126,6 +126,10 @@ var lista = {
             $("#mypanel").panel( "open");
         });
 
+        $("#btnAdd").on("vclick", function(){
+            window.location.href = "nuevo.html";
+        });
+
         /*Capturamos el evento de click de cada imagen*/
         var img = document.getElementsByName("imgName");
 
