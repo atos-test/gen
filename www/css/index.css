@@ -29,7 +29,25 @@
 }
 
 .letraContacto{
-    
+
+}
+
+/*IMPORTANTE: Quito el margin de los input-text. Intentaré cambiarlo más adelante*/
+.ui-input-text{
+    margin-top: 0;
+}
+
+.icono{
+    width: 3em !important;
+}
+
+.bloqueInput{
+    width: 80% !important;
+}
+
+.inputIncorrecto{
+    -webkit-box-shadow: 0 0 12px red !important;
+    box-shadow: 0 0 12px red !important;
 }
 
 /*FIN PARTE ALBERTO*/

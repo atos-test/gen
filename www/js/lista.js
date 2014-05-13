@@ -67,8 +67,8 @@ var lista = {
         self.alturaDocument = self.anchoDocument;
         self.anchoDocument = aux;
 
-        console.log("Ancho: ", self.anchoDocument);
-        console.log("Alto: ", self.alturaDocument);
+        /*console.log("Ancho: ", self.anchoDocument);
+        console.log("Alto: ", self.alturaDocument);*/
     },
 
     resizeImg: function(){
@@ -97,9 +97,9 @@ var lista = {
         var tamLetra = anchoImg*0.012 + "em";
         $(".letraContacto").css({ 'font-size': tamLetra});
 
-        console.log("anchoDocument: ", self.anchoDocument);
+        /*console.log("anchoDocument: ", self.anchoDocument);
         console.log("anchoLista: ", anchoLista);
-        console.log("anchoImg: ", anchoImg);
+        console.log("anchoImg: ", anchoImg);*/
     },
 
     setHeightImg: function(ancho){
@@ -115,7 +115,6 @@ var lista = {
         var template = _.template($('#contactos-template').html(), {contactos : self.contactos});
         $('#listaContactos').html(template);
         $("#listaContactos").listview().listview('refresh');
-        console.log("Pintado");
 
     },
 
@@ -127,7 +126,7 @@ var lista = {
         });
 
         $("#btnAdd").on("vclick", function(){
-            window.location.href = "nuevo.html";
+            window.location.href = "infoContacto.html";
         });
 
         /*Capturamos el evento de click de cada imagen*/
