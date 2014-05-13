@@ -36,15 +36,13 @@
             
             <div id="header" data-theme="a" data-role="header" class="headerLista">
                 
-                
-                    <a data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
                     <label class="lblHeader">Lista</label>
                     <a data-role="button" data-icon="gear" data-iconpos="notext" id="btnPanel"></a>
                 
             </div>
             <div data-role="content" data-theme="a" class="contentLista">
                 <div id="contenedorLista">
-                    <ul id="listaContactos" data-role="listview" data-inset="true">
+                    <ul id="listaContactos" data-role="listview" data-inset="true" class="listaClass">
 
                     </ul>
                 </div>
@@ -56,19 +54,20 @@
                 <% _.each(contactos, function(contacto) {%>
                     <%
                         var idImg = "img"+contacto.id+"Id";
+                        var idContacto = "a"+contacto.id+"Id";
                     %>
 
                     <li data-icon="false" class="elementoLista">
                         <div>
-                            <div id="imagen" style="float:left;">
+                            <div id="imagen" class="left">
                                 <a class="aImgClass"><img id="<%= idImg %>" src=" <%= contacto.Imagen %>" name="imgName" class="imgClass"></a>
                             </div>
                              
-                            <div id="contactoInfo" style="float:left;">
-                                <label><%= contacto.Nombre + " " + contacto.Apellidos %></label>
-                                <label>M&oacute;vil: <%= contacto.TelefonoMovil %></label>
-                                <label>Fijo: <%= contacto.TelefonoFijo %></label>
-                            </div>
+                            <a id="<%= idContacto %> " name="contactoName" class="left infoContacto">
+                                <label class="letraContacto"><%= contacto.Nombre + " " + contacto.Apellidos %></label>
+                                <label class="letraContacto">M&oacute;vil: <%= contacto.TelefonoMovil %></label>
+                                <label class="letraContacto">Fijo: <%= contacto.TelefonoFijo %></label>
+                            </a>
                             
                         </div>
                                 

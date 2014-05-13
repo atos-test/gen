@@ -1,7 +1,9 @@
 /*INICIO PARTE ALBERTO*/
+.left{
+    float: left;
+}
+
 .contentLista{
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .headerLista{
@@ -13,11 +15,22 @@
     text-align: center;
 }
 
+.listaClass{
+    padding: 0;
+}
+
 .elementoLista{
     padding: 0 !important;
 }
 
+.infoContacto{
+    color:black !important;
+    font-weight: bold !important;
+}
 
+.letraContacto{
+    
+}
 
 /*FIN PARTE ALBERTO*/
 

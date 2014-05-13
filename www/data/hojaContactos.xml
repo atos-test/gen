@@ -19,5 +19,50 @@
 			<Imagen>img/96x96icon.png</Imagen>
 			<Favorito>false</Favorito>
 		</cContacto>
+		<cContacto>
+			<id>con2</id>
+			<Nombre>Luis</Nombre>
+			<Apellidos>Cansado Jumilla</Apellidos>
+			<TelefonoMovil>678451236</TelefonoMovil>
+			<TelefonoFijo>916557474</TelefonoFijo>
+			<Imagen>img/96x96icon.png</Imagen>
+			<Favorito>false</Favorito>
+		</cContacto>
+		<cContacto>
+			<id>con3</id>
+			<Nombre>Jose</Nombre>
+			<Apellidos>Martin Mansilla</Apellidos>
+			<TelefonoMovil>612754896</TelefonoMovil>
+			<TelefonoFijo>932458686</TelefonoFijo>
+			<Imagen>img/96x96icon.png</Imagen>
+			<Favorito>false</Favorito>
+		</cContacto>
+		<cContacto>
+			<id>con4</id>
+			<Nombre>Luis Maria</Nombre>
+			<Apellidos>del Potro Suarez</Apellidos>
+			<TelefonoMovil>695786786</TelefonoMovil>
+			<TelefonoFijo>945657412</TelefonoFijo>
+			<Imagen>img/96x96icon.png</Imagen>
+			<Favorito>false</Favorito>
+		</cContacto>
+		<cContacto>
+			<id>con5</id>
+			<Nombre>Eloy</Nombre>
+			<Apellidos>Carrasco Perez</Apellidos>
+			<TelefonoMovil>699456123</TelefonoMovil>
+			<TelefonoFijo>912569642</TelefonoFijo>
+			<Imagen>img/96x96icon.png</Imagen>
+			<Favorito>false</Favorito>
+		</cContacto>
+		<cContacto>
+			<id>con6</id>
+			<Nombre>Daniel</Nombre>
+			<Apellidos>Molina Torremocha</Apellidos>
+			<TelefonoMovil>645865342</TelefonoMovil>
+			<TelefonoFijo>916130550</TelefonoFijo>
+			<Imagen>img/96x96icon.png</Imagen>
+			<Favorito>false</Favorito>
+		</cContacto>
 	</Contactos>
 </chojaContactos>
