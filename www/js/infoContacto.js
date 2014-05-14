@@ -116,6 +116,7 @@ var infoContacto = {
             self.fijoContacto = $("#inputFijo").val();
             self.mailContacto = $("#inputMail").val();
             self.direccionContacto = $("#inputDireccion").val();
+
             console.log("Datos OK");
         }
         else{
