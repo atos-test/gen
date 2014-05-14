@@ -24,6 +24,7 @@
 }
 
 .infoContacto{
+    padding-left: 1em;
     color:black !important;
     font-weight: bold !important;
 }
@@ -38,11 +39,11 @@
 }
 
 .icono{
-    width: 3em !important;
+    width: 13% !important;
 }
 
 .bloqueInput{
-    width: 80% !important;
+    width: 85% !important;
 }
 
 .inputIncorrecto{

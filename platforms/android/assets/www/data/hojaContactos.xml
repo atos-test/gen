@@ -8,6 +8,8 @@
 			<TelefonoMovil>666555444</TelefonoMovil>
 			<TelefonoFijo>916006060</TelefonoFijo>
 			<Imagen>img/96x96icon.png</Imagen>
+			<Email>perico@palotes.com</Email>
+			<Direccion>Alcobendas</Direccion>
 			<Favorito>false</Favorito>
 		</cContacto>
 		<cContacto>
@@ -17,6 +19,8 @@
 			<TelefonoMovil>632987654</TelefonoMovil>
 			<TelefonoFijo>916115478</TelefonoFijo>
 			<Imagen>img/96x96icon.png</Imagen>
+			<Email>shakespeare@gmail.com</Email>
+			<Direccion>Pinto</Direccion>
 			<Favorito>false</Favorito>
 		</cContacto>
 		<cContacto>
@@ -26,6 +30,8 @@
 			<TelefonoMovil>678451236</TelefonoMovil>
 			<TelefonoFijo>916557474</TelefonoFijo>
 			<Imagen>img/96x96icon.png</Imagen>
+			<Email>lucaju@gmail.com</Email>
+			<Direccion>Parla</Direccion>
 			<Favorito>false</Favorito>
 		</cContacto>
 		<cContacto>
@@ -35,6 +41,8 @@
 			<TelefonoMovil>612754896</TelefonoMovil>
 			<TelefonoFijo>932458686</TelefonoFijo>
 			<Imagen>img/96x96icon.png</Imagen>
+			<Email>mansilla.martin@gmail.com</Email>
+			<Direccion>Albarracín 25</Direccion>
 			<Favorito>false</Favorito>
 		</cContacto>
 		<cContacto>
@@ -44,6 +52,8 @@
 			<TelefonoMovil>695786786</TelefonoMovil>
 			<TelefonoFijo>945657412</TelefonoFijo>
 			<Imagen>img/96x96icon.png</Imagen>
+			<Email>luismapotro@gmail.com</Email>
+			<Direccion>Madrid</Direccion>
 			<Favorito>false</Favorito>
 		</cContacto>
 		<cContacto>
@@ -53,6 +63,8 @@
 			<TelefonoMovil>699456123</TelefonoMovil>
 			<TelefonoFijo>912569642</TelefonoFijo>
 			<Imagen>img/96x96icon.png</Imagen>
+			<Email>carrasco.perez.eloy@gmail.com</Email>
+			<Direccion>Quevedo 12</Direccion>
 			<Favorito>false</Favorito>
 		</cContacto>
 		<cContacto>
@@ -62,6 +74,8 @@
 			<TelefonoMovil>645865342</TelefonoMovil>
 			<TelefonoFijo>916130550</TelefonoFijo>
 			<Imagen>img/96x96icon.png</Imagen>
+			<Email>torremocha@gmail.com</Email>
+			<Direccion>Mayor 45</Direccion>
 			<Favorito>false</Favorito>
 		</cContacto>
 	</Contactos>

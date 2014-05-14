@@ -93,9 +93,13 @@ var lista = {
         $(".elementoLista").height(anchoImg);
 
         /*Calculamos el tamaño de la letra de la información del contacto*/
-        /*El 12% del ancho de la imagen*/
-        var tamLetra = anchoImg*0.012 + "em";
+        /*El 14% del ancho de la imagen*/
+        var tamLetra = anchoImg*0.014 + "em";
         $(".letraContacto").css({ 'font-size': tamLetra});
+
+        /*Centramos la informacion: (tamLI - tamA)/2 */
+        var heightA = $(".infoContacto").height();
+        $(".infoContacto").css({ 'padding-top': (anchoImg - heightA)/2});
 
         /*console.log("anchoDocument: ", self.anchoDocument);
         console.log("anchoLista: ", anchoLista);
