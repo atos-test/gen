@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <!--Scripts-->
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/underscore-min.js"></script>
+        <script type="text/javascript" src="js/infoContacto.js"></script>
+
+        <!--Style-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<script type="text/javascript">
+            $(window).load(infoContacto.initialize);
+            //$(document).on('pageinit',"#listaPage", lista.initialize );
+        </script>
+
+        <div id="nuevoPage" data-role="page" data-theme="a" >
+        	            
+            <div id="headerNuevo" data-theme="a" data-role="header" class="headerLista" data-position="fixed" data-tap-toggle="false">
+                
+                    <label id="lblHeaderInfo" class="lblHeader">Nuevo</label>
+                
+            </div>
+            <div data-role="content" data-theme="a">
+
+                <div data-role="popup" id="errorPopup" data-overlay-theme="a" data-theme="a" data-dismissible="false" class="ui-corner-all">
+                    <div data-role="header" data-theme="e" class="ui-corner-top">
+                        <h2>Error</h2>
+                    </div>
+                    <div data-role="content" data-theme="a" class="ui-corner-bottom ui-content">
+                        <h3 id="errorTxt"></h3>
+                        <center>
+                            <a id="btnAceptarPopup" data-role="button" data-inline="true" data-rel="back" data-mini="true" data-transition="flow" data-theme="a">Aceptar</a>
+                        </center>
+                    </div>
+                </div>
+
+                <fieldset class="contenidoInfo">
+                            
+                    <div class="ui-grid-a">
+                    
+                        <div class="ui-block-a">
+                            <label id="lblNombre" class="etiqueta">Nombre:</label>
+                        </div>
+                        <div class="ui-block-a icono">
+                            <img src="img/icon-32-nombre.png" alt="i">
+                        </div>
+
+                        <div class="ui-block-b bloqueInput">
+                            <input type="text" id="inputNombre" name="inputObligatorio">
+                        </div> 
+                    </div>
+
+                    <div class="ui-grid-a">
+                    
+                        <div class="ui-block-a">
+                            <label id="lblApellidos" class="etiqueta">Apellidos:</label>
+                        </div>
+                        <div class="ui-block-a icono">
+                            <img src="img/icon-32-nombre.png" alt="i">
+                        </div>
+
+                        <div class="ui-block-b bloqueInput">
+                            <input type="text" id="inputApellidos" name="inputObligatorio">
+                        </div> 
+                    </div>
+
+                    <div class="ui-grid-a">
+                    
+                        <div class="ui-block-a">
+                            <label id="lblMovil" class="etiqueta">Tlf. M&oacute;vil:</label>
+                        </div>
+                        <div class="ui-block-a icono">
+                            <img src="img/icon-32-direccion.png" alt="i">
+                        </div>
+
+                        <div class="ui-block-b bloqueInput">
+                            <input type="text" id="inputMovil" name="inputObligatorio">
+                        </div> 
+                    </div>
+
+                    <div class="ui-grid-a">
+                    
+                        <div class="ui-block-a">
+                            <label id="lblFijo" class="etiqueta">Tlf. Fijo:</label>
+                        </div>
+                        <div class="ui-block-a icono">
+                            <img src="img/icon-32-hora.png" alt="i">
+                        </div>
+
+                        <div class="ui-block-b bloqueInput">
+                            <input type="text" id="inputFijo">
+                        </div> 
+                    </div>
+
+                    <div class="ui-grid-a">
+                    
+                        <div class="ui-block-a">
+                            <label id="lblMail" class="etiqueta">Email:</label>
+                        </div>
+                        <div class="ui-block-a icono">
+                            <img src="img/icon-32-mail.png" alt="i">
+                        </div>
+
+                        <div class="ui-block-b bloqueInput">
+                            <input type="text" id="inputMail">
+                        </div> 
+                    </div>
+
+                    <div class="ui-grid-a">
+                    
+                        <div class="ui-block-a">
+                            <label id="lblDireccion" class="etiqueta">Direccion:</label>
+                        </div>
+                        <div class="ui-block-a icono">
+                            <img src="img/icon-32-direccion.png" alt="i">
+                        </div>
+
+                        <div class="ui-block-b bloqueInput">
+                            <input type="text" id="inputDireccion">
+                        </div> 
+                    </div>
+                </fieldset>
+
+
+            
+
+            </div>       
+
+            <div data-role="footer" data-theme="a" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a id="btnAceptarInfo" data-role="button" data-icon="check" data-inline="true" data-mini="true">Crear</a></li>                        
+                        <li><a id="btnCancelarInfo" data-role="button" data-icon="delete" data-inline="true" data-mini="true">Cancelar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>
